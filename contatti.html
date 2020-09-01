@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="it" class="nav-no-js">
+
+<head>
+
+<title>Stato dei servizi di Multi-Installer.it</title>
+
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="Description" content="Gestione Magazzino by Fabrizio Amorelli" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="stylesheet" href="css/normalize.min.css">
+<link rel="stylesheet" href="css/defaults.min.css">
+<link rel="stylesheet" href="css/nav-core.min.css">
+<link rel="stylesheet" href="css/nav-layout.min.css">
+<link rel="stylesheet" href="css/scroll.css">
+<link rel="stylesheet" href="css/lista.css">
+<link rel="stylesheet" href="css/arrow.css">
+
+<!--[if lt IE 9]>
+<link rel="stylesheet" href="css/ie8-core.min.css">
+<link rel="stylesheet" href="css/ie8-layout.min.css">
+<script src="js/html5shiv.min.js"></script>
+<![endif]-->
+
+<script src="js/rem.min.js"></script>
+
+<link rel="shortcut icon" href="img/favicon.ico" />
+<link rel="stylesheet" href="fonts/font-awesome.min.css">
+<link rel="stylesheet" href="css/fabri3.css">
+
+<style>
+.socialmedia a {
+	display: inline-block;
+	width: 60px;
+	height: 60px;
+	color: #bfbebe;
+	background-color: #333;
+	line-height: 60px;
+	border-radius: 50%;
+	margin: 0 6px;
+	font-size: 40px;
+	transition: .3s linear;
+	
+}
+
+.socialmedia #yt:hover{
+	background-color: #ff0000;
+	color: white;
+}
+
+.socialmedia #lnk:hover{
+	background-color: #0274b3;
+	color: white;
+}
+
+.socialmedia #git:hover{
+	background-color: #f3f2f2;
+	color: #333;
+}
+/*
+.fa-fabri {
+	font-size:50px;
+}
+.fa-fabri:hover {
+	color: #404040;
+}
+.fa-youtube {
+	color: #ff0000;
+}
+
+.fa-linkedin {
+	color: #0274b3;
+}
+
+.fa-github2 {
+	color: black;
+}*/
+</style>
+
+<style>
+.main {
+	margin: auto;
+	padding-top: 150px;
+	padding-bottom: 15px;
+	width: 100%;
+}
+
+
+@media only screen and (min-width:997px){
+	.main {
+		margin: auto;
+		width: 100%;
+		padding-top: 150px;
+		padding-bottom: 15px;
+	}
+}
+
+</style>
+
+</head>
+
+<body>
+
+<a href="javascript:" id="return-to-top"><i class="fa fa-chevron-up"></i></a>
+
+<header style="position: fixed;">
+    <h1 id="barra"></h1>
+	<nav class="nav">
+		<ul id="menu">
+			<li><a href="./" target="_blank"><span class="fa fa-info-circle"></span> Stato</a></li>
+			<li><a href="https://multi-installer.it" target="_blank"><span class="fa fa-home"></span> Multi-Installer.it</a></li>
+			<li><a href="https://multi-installer.it/windows" target="_blank"><span class="fa fa-windows"></span> Multi-Windows</a></li>
+			<li><a href="https://t.me/Multi_Installer_Bot" target="_blank"><span class="fa fa-telegram"></span> Telegram Bot</a></li>
+			<li><a href="contatti.html"><span class="fa fa-id-card"></span> Contatti</a></li>
+		</ul>
+	</nav>
+</header>
+
+<a href="#" class="nav-button">Menu</a>
+<a href="#" class="nav-close">Close Menu</a>
+
+<div style="padding: 0px;padding-top: 4.4rem;text-align:center;">
+
+<h1>Multi-Installer<br>Web Server Edition</h1>
+<h2>Realizzato da Fabrizio Amorelli</h2>
+<br>
+<h2><a href="mailto:postmaster@multi-installer.it">postmaster@multi-installer.it</a></h2>
+
+<div class="socialmedia">
+<a href="https://www.youtube.com/channel/UCj1OKw4Me2GCSooYMBC9yMA" target="_blank" title="YouTube" id="yt"><span class="fa fa-youtube fa-fabri"></span></a>
+<a href="https://www.linkedin.com/in/fabrizio-amorelli-ab0a2bb9/" target="_blank" title="LinkedIn" id="lnk"><span class="fa fa-linkedin fa-fabri"></span></a>
+<a href="https://github.com/Fabrizio04" target="_blank" title="GitHub" id="git"><span class="fa fa-github fa-fabri fa-github2"></span></a>
+</div>
+<br>
+<em>"Prosegui sempre, non mollare Mai".</em><!-- 08/03/2020 -->
+
+<!--<p style="color:blue">#Iorestoacasa</p>-->
+
+<h3><strong>©</strong> 2018-2020 Multi-Installer.it</h3>
+
+</div>
+
+<br>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/nav.jquery.min.js"></script>
+<script>
+    $('.nav').nav();
+</script>
+
+<script id="rendered-js">
+$(window).scroll(function () {
+  if ($(this).scrollTop() >= 50) {
+    $('#return-to-top').fadeIn(200);
+  } else {
+    $('#return-to-top').fadeOut(200);
+  }
+});
+$('#return-to-top').click(function () {
+  $('body,html').animate({
+    scrollTop: 0
+  }, 500);
+});
+</script>
+
+</body>
+
+</html>
