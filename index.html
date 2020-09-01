@@ -1,1 +1,175 @@
-<h1>Hello World!</h1>
+<!DOCTYPE html>
+<html lang="it" class="nav-no-js">
+
+<head>
+
+<title>Stato dei servizi di Multi-Installer.it</title>
+
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="Description" content="Gestione Magazzino by Fabrizio Amorelli" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="stylesheet" href="css/normalize.min.css">
+<link rel="stylesheet" href="css/defaults.min.css">
+<link rel="stylesheet" href="css/nav-core.min.css">
+<link rel="stylesheet" href="css/nav-layout.min.css">
+<link rel="stylesheet" href="css/scroll.css">
+<link rel="stylesheet" href="css/lista.css">
+<link rel="stylesheet" href="css/arrow.css">
+
+<!--[if lt IE 9]>
+<link rel="stylesheet" href="css/ie8-core.min.css">
+<link rel="stylesheet" href="css/ie8-layout.min.css">
+<script src="js/html5shiv.min.js"></script>
+<![endif]-->
+
+<script src="js/rem.min.js"></script>
+
+<link rel="shortcut icon" href="img/favicon.ico" />
+<link rel="stylesheet" href="fonts/font-awesome.min.css">
+<link rel="stylesheet" href="css/fabri3.css">
+
+<style>
+.tr {
+	text-align:left;
+	background-color:#bfbebe;
+}
+
+td {
+	padding:4px;
+	vertical-align: middle;
+}
+
+@media only screen and (max-width: 996px) {
+	table {
+		width: 90%;
+	}
+	
+	tr {
+		text-align:center;
+	}
+}
+
+</style>
+
+<style>
+.main {
+	margin: auto;
+	padding-top: 150px;
+	padding-bottom: 15px;
+	width: 100%;
+}
+
+
+@media only screen and (min-width:997px){
+	.main {
+		margin: auto;
+		width: 100%;
+		padding-top: 150px;
+		padding-bottom: 15px;
+	}
+}
+
+</style>
+
+</head>
+
+<body>
+
+<a href="javascript:" id="return-to-top"><i class="fa fa-chevron-up"></i></a>
+
+<header style="position: fixed;">
+    <h1 id="barra"></h1>
+	<nav class="nav">
+		<ul id="menu">
+			<li><a href="./" target="_blank"><span class="fa fa-info-circle"></span> Stato</a></li>
+			<li><a href="https://multi-installer.it" target="_blank"><span class="fa fa-home"></span> Multi-Installer.it</a></li>
+			<li><a href="https://multi-installer.it/windows" target="_blank"><span class="fa fa-windows"></span> Multi-Windows</a></li>
+			<li><a href="https://t.me/Multi_Installer_Bot" target="_blank"><span class="fa fa-telegram"></span> Telegram Bot</a></li>
+			<li><a href="contatti.html"><span class="fa fa-id-card"></span> Contatti</a></li>
+		</ul>
+	</nav>
+</header>
+
+<a href="#" class="nav-button">Menu</a>
+<a href="#" class="nav-close">Close Menu</a>
+
+<div style="padding: 0px;padding-top: 4.4rem;text-align:center;">
+
+<h1>Stato dei servizi di Multi-Installer.it</h1>
+
+<table align="center" class="tr" width="45%">
+
+<tbody>
+
+<tr>
+<td><img src="./img/Online_Icon.svg"></td>
+<td><h2>Tutti i servizi funzionano regolarmente</h2></td>
+</tr>
+
+</tbody>
+
+</table>
+
+<table align="center" class="tr" width="45%">
+
+<tbody>
+
+<tr style="border-top: 1px solid #d9d9d9;">
+<td><img src="./img/Online_Icon.svg" width="16" height="16"></td>
+<td><h3>Multi-Installer.it — Web Server</h3></td>
+</tr>
+
+<tr style="border-top: 1px solid #d9d9d9;">
+<td><img src="./img/Online_Icon.svg" width="16" height="16"></td>
+<td><h3>Multi-Installer.it — Telegram</h3></td>
+</tr>
+
+<tr style="border-top: 1px solid #d9d9d9;">
+<td><img src="./img/Online_Icon.svg" width="16" height="16"></td>
+<td><h3>Multi-Installer.it — Engine</h3></td>
+</tr>
+
+<tr style="border-top: 1px solid #d9d9d9;">
+<td><img src="./img/Online_Icon.svg" width="16" height="16"></td>
+<td><h3>Multi-Installer.it — API</h3></td>
+</tr>
+
+<tr style="border-top: 1px solid #d9d9d9;">
+<td><img src="./img/Online_Icon.svg" width="16" height="16"></td>
+<td><h3>Multi-Windows — Engine</h3></td>
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+<br>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/nav.jquery.min.js"></script>
+<script>
+    $('.nav').nav();
+</script>
+
+<script id="rendered-js">
+$(window).scroll(function () {
+  if ($(this).scrollTop() >= 50) {
+    $('#return-to-top').fadeIn(200);
+  } else {
+    $('#return-to-top').fadeOut(200);
+  }
+});
+$('#return-to-top').click(function () {
+  $('body,html').animate({
+    scrollTop: 0
+  }, 500);
+});
+</script>
+
+</body>
+
+</html>
