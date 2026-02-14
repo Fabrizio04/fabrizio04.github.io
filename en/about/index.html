@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fabrizio Amorelli | About me</title>
+    <meta name="description" content="Fabrizio Amorelli Portfolio, IT Systems & Software Engineer.">
+    <link rel="icon" type="image/x-icon" href="../../favicon.ico">
+    <link rel="alternate" hreflang="it" href="https://fabrizio04.github.io">
+    <link rel="alternate" hreflang="en" href="https://fabrizio04.github.io/en/">
+    <link rel="alternate" hreflang="x-default" href="https://fabrizio04.github.io">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../../style/fabrizio.css">
+    <script src="../../js/bro_en.js" type="text/javascript"></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Fabrizio Amorelli</h1>
+        <p>IT Systems & Software Engineer<br>AI & IoT Enthusiast</p>
+        <div class="nav-links">
+            <a href="../">Projects</a>
+            <a href="./">About Me</a>
+            <span style="color: rgba(255,255,255,0.3); margin: 0 10px;">|</span>
+            <a href="../../about/" style="opacity: 0.6;">IT</a>
+        </div>
+    </header>
+
+    <div class="container">
+        <section>
+            <h2>About me</h2>
+            <div class="card">
+                <p>IT Systems & Software Engineer with over 10 years of cross-functional experience in Information
+                    Systems management and the development of software/hardware solutions for IoT, Smart City and
+                    Infrastructural Monitoring. Specialized in system integration for physical security, energy
+                    monitoring and the application of Artificial Intelligence with specific expertise in RAG
+                    architectures and the implementation of local LLM models.</p>
+                <p>Throughout my career I've collaborated on critical projects for major public entities and private
+                    corporations, including Large-Scale Retail (GDO), Trenitalia, RFI, ICAR CNR, ANAS, the Ministry of
+                    Justice and the National Health Service.</p>
+            </div>
+        </section>
+    </div>
+
+    <div id="imgModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="toggleModal('imgModal')">&times;</span>
+            <div class="slides-container">
+                <div class="mySlides"><img src="https://picsum.photos/id/1/800/450" alt="Slide 1"></div>
+                <div class="mySlides"><img src="https://picsum.photos/id/2/800/450" alt="Slide 2"></div>
+                <div class="mySlides"><img src="https://picsum.photos/id/3/800/450" alt="Slide 3"></div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <div class="dot-container">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+    </div>
+
+    <div id="videoModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="toggleModal('videoModal')">&times;</span>
+            <div class="video-wrapper">
+                <iframe id="ytPlayer" src="https://www.youtube.com/embed/aTBdGxQnOHI?enablejsapi=1"
+                    allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-socials">
+            <a href="https://linkedin.com/in/fabrizio-amorelli" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/Fabrizio04" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://youtube.com/@Fabry04" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
+        <p class="copy">Written and maintained by <a href="./">Fabrizio Amorelli</a></p>
+    </footer>
+</body>
+
+</html>

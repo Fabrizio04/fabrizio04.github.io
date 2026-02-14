@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fabrizio Amorelli | Portfolio</title>
+    <meta name="description" content="Fabrizio Amorelli Portfolio, IT Systems & Software Engineer.">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <link rel="alternate" hreflang="it" href="https://fabrizio04.github.io">
+    <link rel="alternate" hreflang="en" href="https://fabrizio04.github.io/en/">
+    <link rel="alternate" hreflang="x-default" href="https://fabrizio04.github.io">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../style/fabrizio.css">
+    <script src="../js/bro_en.js" type="text/javascript"></script>
+    <script src="../js/projects-config.js" type="text/javascript"></script>
+    <script src="../js/fabrizio.js" type="text/javascript" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Fabrizio Amorelli</h1>
+        <p>IT Systems & Software Engineer<br>AI & IoT Enthusiast</p>
+        <div class="nav-links">
+            <a href="./">Projects</a>
+            <a href="./about/">About Me</a>
+            <span style="color: rgba(255,255,255,0.3); margin: 0 10px;">|</span>
+            <a href="../" style="opacity: 0.6;">IT</a>
+        </div>
+    </header>
+
+    <div class="container">
+        <section>
+            <h2>Featured Projects</h2>
+            <div class="card">
+                <h3>Multi-Installer (Open Source)</h3>
+                <p>Automated software deployment and configuration for Windows environments.</p>
+                <p class="tech-stack">Year: 2014-2024</p>
+                <p class="tech-stack">Stack: Scripting, Windows Automation</p>
+                <div class="project-actions">
+                    <i class="fas fa-images" onclick="openImgModal('multi-installer-en')" title="View Screenshot"></i>
+                    <i class="fab fa-youtube" onclick="toggleModal('videoModal')" title="Watch Demo Video"></i>
+                </div>
+            </div>
+            <div class="card">
+                <h3>AI & Energy Monitoring</h3>
+                <p>RAG Chatbot implementation with local LLM models (Ollama) for energy consumption analysis.</p>
+                <p class="tech-stack">Year: 2025-2026</p>
+                <p class="tech-stack">Stack: Python, React JS, Ollama</p>
+                <div class="project-actions">
+                    <i class="fas fa-images" onclick="openImgModal('energy-ai-en')" title="View Screenshot"></i>
+                </div>
+            </div>
+            <div class="card">
+                <h3>K-Ticketing Platform</h3>
+                <p>Full-Stack solution for Trouble Ticketing (Web and Android Mobile) and Asset Management.</p>
+                <p class="tech-stack">Year: 2022-2026</p>
+                <p class="tech-stack">Stack: .NET MAUI, React JS, PHP</p>
+                <div class="project-actions">
+                    <i class="fas fa-images" onclick="openImgModal('k-ticketing-en')" title="View Screenshot"></i>
+                    <i class="fas fa-images" onclick="openImgModal('k-ticketing-mobile-en')" title="View Screenshot"></i>
+                </div>
+            </div>
+            <div class="card">
+                <h3>COGITO Project</h3>
+                <p>Web App Development for the integration of dynamic cognitive systems and IoT (Smart Building).</p>
+                <p class="tech-stack">Year: 2020-2021</p>
+                <p class="tech-stack">Stack: JavaScript, PHP, MQTT</p>
+                <div class="project-actions">
+                    <i class="fas fa-images" onclick="openImgModal('cogito-en')" title="View Screenshot"></i>
+                    <a href="https://www.cueim.org/progetti/cogito-a-cognitive-dynamic-system-to-allow-buildings-to-learn-and-adapt/" target="_blank"><i class="fa-solid fa-globe" title="Web Site"></i></a>
+                </div>
+            </div>
+            <div class="card">
+                <h3>Stockroom Management (Open Source)</h3>
+                <p>Web Dashboard Development for managing inventory, loading and unloading stock.</p>
+                <p class="tech-stack">Year: 2018-2024</p>
+                <p class="tech-stack">Stack: JavaScript, PHP</p>
+                <div class="project-actions">
+                    <i class="fas fa-images" onclick="openImgModal('magazzino-en')" title="View Screenshot"></i>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div id="imgModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="toggleModal('imgModal')">&times;</span>
+            <div class="slides-container">
+                <div class="mySlides"><img src="https://picsum.photos/id/1/800/450" alt="Slide 1"></div>
+                <div class="mySlides"><img src="https://picsum.photos/id/2/800/450" alt="Slide 2"></div>
+                <div class="mySlides"><img src="https://picsum.photos/id/3/800/450" alt="Slide 3"></div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <div class="dot-container">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+    </div>
+
+    <div id="videoModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="toggleModal('videoModal')">&times;</span>
+            <div class="video-wrapper">
+                <iframe id="ytPlayer" src="https://www.youtube.com/embed/aTBdGxQnOHI?enablejsapi=1"
+                    allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-socials">
+            <a href="https://linkedin.com/in/fabrizio-amorelli" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/Fabrizio04" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://youtube.com/@Fabry04" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
+        <p class="copy">Written and maintained by <a href="./about/">Fabrizio Amorelli</a></p>
+    </footer>
+
+    <button id="backToTop" class="backToTopBtn" title="Go Up"><i class="fas fa-chevron-up"></i></button>
+
+    <template id="slide-template">
+        <div class="mySlides">
+            <div class="image-container">
+                <img src="" style="width:100%"><!--loading="lazy"-->
+                <!-- <a class="zoom-btn" href="" target="_blank" title="Apri a risoluzione originale">
+                    <i class="fas fa-search-plus"></i>
+                </a> -->
+            </div>
+        </div>
+    </template>
+
+    <template id="dot-template">
+        <span class="dot"></span>
+    </template>
+
+</body>
+
+</html>
