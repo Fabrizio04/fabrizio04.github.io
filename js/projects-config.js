@@ -105,6 +105,9 @@ const projectData = {
         './img/img48.png',
         './img/img49.png',
         './img/img50.png',
+        './img/img60.png',
+        './img/img61.png',
+        './img/img62.png'
     ],
     'k-ticketing-mobile-en': [
         '../img/img40.png',
@@ -118,6 +121,9 @@ const projectData = {
         '../img/img48.png',
         '../img/img49.png',
         '../img/img50.png',
+        '../img/img60.png',
+        '../img/img61.png',
+        '../img/img62.png'
     ],
     'energy-ai': [
         './img/img51.png',
