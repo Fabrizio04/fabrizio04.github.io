@@ -146,5 +146,13 @@ const projectData = {
         '../img/img57.png',
         '../img/img58.png',
         '../img/img59.png'
+    ],
+    'mattermost-tg': [
+        './img/img63.png',
+        './img/img64.png',
+    ],
+    'mattermost-tg-en': [
+        '../img/img63.png',
+        '../img/img64.png',
     ]
 };
